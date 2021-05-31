@@ -8,3 +8,12 @@
 ```javascript
 import ReactNativeRongta from 'react-native-rongta';
 
+
+//get all devices
+ReactNativeRongta.getDevicesList()
+
+//connect to a specific device
+ReactNativeRongta.connectToDevice(id)
+
+//print a text
+ReactNativeRongta.print(text)
