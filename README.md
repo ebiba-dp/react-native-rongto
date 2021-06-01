@@ -15,7 +15,7 @@ ReactNativeRongta.getDevicesList((error, devicesList) => {
 });
 
 //connect to a specific device
-DanielRNRongta.connectToDevice( id, (result) => {
+ReactNativeRongta.connectToDevice( id, (result) => {
    if(result == "1") {
       // Successful connection
    } else {
