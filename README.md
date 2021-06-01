@@ -20,13 +20,12 @@ ReactNativeRongta.getDevicesList((error, devicesList) => {
 ReactNativeRongta.connectToDevice(id)
 
 DanielRNRongta.connectToDevice( id, (result) => {
-        if(result == "1") {
-          // Successful connection
-        } else {
-          // connection failed
-        }
-    }
-);
+   if(result == "1") {
+      // Successful connection
+   } else {
+      // connection failed
+   }
+});
 
 //print a text
 ReactNativeRongta.print("text")
