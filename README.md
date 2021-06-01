@@ -12,8 +12,22 @@ import ReactNativeRongta from 'react-native-rongta';
 //get all devices
 ReactNativeRongta.getDevicesList()
 
+ReactNativeRongta.getDevicesList((error, devicesList) => {
+      
+});
+
 //connect to a specific device
 ReactNativeRongta.connectToDevice(id)
 
+DanielRNRongta.connectToDevice( id,
+      (result) => {
+        if(result == "1") {
+          // Successful connection
+        } else {
+          // connection failed
+        }
+      }
+);
+
 //print a text
-ReactNativeRongta.print(text)
+ReactNativeRongta.print("text")
